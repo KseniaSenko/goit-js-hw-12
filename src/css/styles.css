@@ -1,8 +1,7 @@
 @import url('./reset.css');
-@import url('./iziToast.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -51,8 +50,9 @@
   margin-bottom: 32px;
 }
 .form-value,
-.timer-btn {
-  font-family: 'Montserrat', sans-serif;
+.form-btn,
+.load-btn {
+  font-family: inherit;
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.64px;
@@ -74,7 +74,8 @@
   border: 1px solid #4e75ff;
 }
 
-.form-btn {
+.form-btn,
+.load-btn {
   padding: 8px 16px;
   font-weight: 400;
   border: 1px solid transparent;
@@ -82,7 +83,8 @@
   background: #4e75ff;
   color: #fff;
 }
-.form-btn:hover {
+.form-btn:hover,
+.load-btn:hover {
   background: #6c8cff;
 }
 .form-btn:disabled {
@@ -123,4 +125,18 @@
 .gallery-img-info {
   display: flex;
   text-align: center;
+}
+.load-btn {
+  margin: 40px auto;
+  display: block;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.end-msg {
+  font-family: inherit;
+  text-align: center;
+  margin-bottom: 30px;
 }
