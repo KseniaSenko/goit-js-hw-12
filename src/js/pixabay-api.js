@@ -19,7 +19,7 @@ export const refs = {
 
 let page = 1;
 let inputSearch = '';
-let perPage = 200;
+let perPage = 15;
 
 export async function getImages() {
     refs.loader.classList.remove('hidden');
